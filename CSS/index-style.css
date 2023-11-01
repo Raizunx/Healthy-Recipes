@@ -1,0 +1,193 @@
+/*body*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../media/background/background.jpg);
+}
+
+/*header*/
+header {
+  background-image: url(../media/background/header.jpg);
+  background-color: #2f7604;
+  text-align: center;
+  color: white;
+  font-size: 330%;
+  width: 100%;
+  margin-top: 0;
+  font-weight: 900;
+}
+
+header p,
+header img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header img {
+  width: 9%;
+  float: right;
+  margin-right: 100px;
+}
+
+header p {
+  text-align: center;
+}
+
+/*nav*/
+nav {
+  font-size: 150%;
+  padding: 0;
+  width: 100%;
+  margin-top: -24px;
+}
+
+nav ul {
+  list-style: none;
+  background: #b6d084;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #ffcb32;
+  color: black;
+}
+
+nav ul a.active {
+  background-color: #f8ffca;
+  color: black;
+}
+
+/*foooter*/
+footer {
+  background-color: #ffcb32;
+  color: black;
+  text-align: center;
+  font-size: 200%;
+  width: 100%;
+}
+
+/*main content*/
+.purposeAndLinks {
+  background-image: url(../media/background/bacground-main-section.jpg);
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  margin-top: -25px;
+}
+
+#paragraph {
+  width: 73%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+
+#otherPages {
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+#otherPages .boxIcon img {
+  width: 50%;
+}
+
+.boxIcon {
+  display: inline-block;
+  width: 150px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 20px;
+}
+
+.boxIcon a {
+  text-decoration: none;
+  color: black;
+  margin: -10px;
+  font-size: 100%;
+}
+
+.boxIcon:hover {
+  background-color: white;
+}
+
+/*recipe*/
+#recipies {
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.recipe {
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.recipe:hover {
+  background-color: rgba(128, 128, 128, 0.486);
+}
+
+.recipe p.title {
+  font-size: 200%;
+  text-align: center;
+}
+
+.recipe video {
+  width: 90%;
+  text-align: center;
+}
+
+.recipe .typeFood {
+  background-color: rgba(128, 128, 128, 0.068);
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px;
+  font-size: 180%;
+  display: inline-block;
+  width: 25%;
+}
+
+.recipe .typeFood:hover {
+  background-color: white;
+  color: black;
+}
+
+.recipe .ingredients {
+  background-color: rgba(128, 128, 128, 0.233);
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-size: 140%;
+  width: 30%;
+}
+
+.recipe .ingredients:hover {
+  background-color: white;
+  color: black;
+}
