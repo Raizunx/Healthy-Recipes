@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Contact the team!</title>
 
     <link rel="stylesheet" href="../CSS/contact-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans"
+    />
   </head>
+
   <body>
     <main>
-      <section class="Contact">
-        <div class="ContactRectangle">
+      <section class="contact">
+        <article class="contactRectangle">
           <h1>Contact Us</h1>
           <p>
             Fill out the form below to get in touch with us. If we do not reply
@@ -18,13 +24,13 @@
           </p>
 
           <form method="post" autocomplete="on">
-            <div class="form-group">
-              <label for="firstname">First name</label>
+            <article class="fieledRectangle">
+              <label for="firstName">First Name</label>
               <input
                 type="text"
-                name="firstname"
-                id="firstname"
-                class="form-element"
+                name="firstName"
+                id="firstName"
+                class="userInput"
                 placeholder="Daniel"
                 required
                 autofocus
@@ -32,24 +38,27 @@
                 maxlength="20"
                 pattern="[a-zA-z]+"
               />
-            </div>
-            <div class="form-group">
-              <label for="lastname">Last name</label>
+            </article>
+
+            <article class="fieledRectangle">
+              <label for="lastName">Last Name</label>
               <input
                 type="text"
-                name="lastname"
-                id="lastname"
-                class="form-element"
+                name="lastName"
+                id="lastName"
+                class="userInput"
                 required
                 placeholder="Robinson"
                 minlength="2"
                 maxlength="20"
                 pattern="[a-zA-z]+"
               />
-            </div>
-            <div class="form-group">
-              <label for="Mobile">Mobile</label>
-              <select name="countryCode" class="form-element">
+            </article>
+
+            <article class="fieledRectangle">
+              <label id="mobileHeader" for="mobile">Mobile</label>
+
+              <select id="countryCode" name="countryCode" class="selectChoice">
                 <option value="+966" selected>+966</option>
                 <option value="+1">+1</option>
                 <option value="+44">+44</option>
@@ -59,106 +68,133 @@
                 <option value="+968">+968</option>
                 <option value="+970">+970</option>
               </select>
+
               <input
                 type="tel"
-                name="Mobile"
-                id="Mobile"
-                class="form-element"
+                name="mobile"
+                id="mobile"
+                class="userInput"
                 required
                 placeholder="509098643"
                 minlength="9"
                 maxlength="9"
                 pattern="[0-9]{9}"
               />
-            </div>
-            <div class="form-group sub-title">
-              Gender
-              <div class="form-element">
+            </article>
+
+            <article class="fieledRectangle">
+              <span>Gender</span>
+              <article class="radiosRectangle">
                 <label for="male">Male</label>
-                <input type="radio" id="male" name="gender" value="male" />
+                <input
+                  type="radio"
+                  id="male"
+                  class="radioChoice"
+                  name="gender"
+                  value="male"
+                />
+
                 <label for="female">Female</label>
                 <input
                   type="radio"
                   id="female"
+                  class="radioChoice"
                   name="gender"
                   value="female"
                   checked
                 />
-              </div>
-            </div>
-            <div class="form-group">
+              </article>
+            </article>
+
+            <article class="fieledRectangle">
               <label for="birthday">Birthday</label>
               <input
                 type="date"
                 id="birthday"
                 name="birthday"
-                class="form-element"
+                class="userInput"
               />
-            </div>
-            <div class="form-group">
+            </article>
+
+            <article class="fieledRectangle">
               <label for="email">Email address</label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                class="form-element"
+                class="userInput"
                 required
                 placeholder="daniel_robinson32@example.com"
                 minlength="6"
                 maxlength="40"
                 pattern="[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+\.[a-zA-Z]{2-4}"
               />
-            </div>
-            <div class="form-group">
-              <label for="language">language</label>
-              <select name="language" id="language" class="form-element">
+            </article>
+
+            <article class="fieledRectangle">
+              <label for="language">Language</label>
+              <select name="language" id="language" class="selectChoice">
                 <option value="Arabic">Arabic</option>
                 <option value="English">English</option>
                 <option value="French">French</option>
                 <option value="Germany">Germany</option>
               </select>
-            </div>
-            <div class="form-group sub-title">
-              Type of Message
-              <div class="form-element">
+            </article>
+
+            <article class="fieledRectangle">
+              <span>Type of Message</span>
+
+              <article class="radiosRectangle">
                 <label for="problem">Problem</label>
                 <input
                   type="radio"
                   id="problem"
+                  class="radioChoice"
                   name="msgType"
                   value="problem"
                   checked
                 />
-                <label for="Suggest">Suggest</label>
+
+                <label for="suggest">Suggest</label>
                 <input
                   type="radio"
-                  id="Suggest"
+                  id="suggest"
+                  class="radioChoice"
                   name="msgType"
-                  value="Suggest"
+                  value="suggest"
                 />
+
                 <label for="other">Other</label>
-                <input type="radio" id="other" name="msgType" value="other" />
-              </div>
-            </div>
-            <div class="form-group full">
-              <label for="message">Message</label>
+                <input
+                  type="radio"
+                  id="other"
+                  class="radioChoice"
+                  name="msgType"
+                  value="other"
+                />
+              </article>
+            </article>
+
+            <article class="fieledRectangle full-space">
+              <label for="message" id="messageHeader">Message</label>
               <textarea
                 name="message"
                 id="message"
-                class="form-element"
-                placeholder="write a message, no more than 250 letter"
+                class="userInput"
+                placeholder="Write a Message, No More Than 250 Letter"
                 minlength="10"
                 maxlength="250"
                 cols="50"
                 rows="5"
               ></textarea>
-            </div>
-            <div class="button-group">
+            </article>
+
+            <article class="buttons">
               <input type="submit" value="Sned" />
               <input type="reset" value="Clear" />
-            </div>
+            </article>
           </form>
-        </div>
+        </article>
       </section>
     </main>
   </body>

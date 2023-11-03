@@ -1,110 +1,234 @@
-.Contact {
-  background-color: #fcbf49;
-  background-repeat: no-repeat;
-  background-size: cover;
+* {
+  font-family: "Alegreya Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* to make any child container do not go out the parent container*/
+  scroll-behavior: smooth;
 }
 
-.Contact {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+@media only screen and (min-width: 992px) {
+  .contact .contactRectangle p {
+    width: 70%;
+  }
+
+  .contact .contactRectangle form .fieledRectangle .radiosRectangle label {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact .contactRectangle p {
+    width: 80%;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="email"],
+  textarea,
+  .selectChoice {
+    font-size: 19px;
+  }
+
+  #countryCode {
+    width: 30%;
+  }
+
+  #mobile {
+    width: 59%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .contactRectangle form .fieledRectangle .radiosRectangle label {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="email"],
+  textarea,
+  .selectChoice {
+    font-size: 12px;
+  }
+
+  #countryCode {
+    width: 40%;
+  }
+
+  #mobile {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .contact .contactRectangle p {
+    width: 100%;
+  }
+
+  .contact .contactRectangle form .fieledRectangle .radiosRectangle label {
+    font-size: 15px;
+  }
+}
+
+.contact {
+  width: 100%;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background-image: url(../Media/background/background-contact-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../media/orangeBackGround.jpg);
+  background-position: top;
   background-attachment: fixed;
+  padding-top: 110px;
+  padding-bottom: 50px;
 }
 
-.Contact .ContactRectangle {
+.contact .contactRectangle {
   max-width: 1280px;
   margin: 0 auto;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-@media (min-width: 768px) {
-  .Contact .ContactRectangle {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
+.contact .contactRectangle h1 {
+  display: flex;
+  justify-content: center; /*made text in middile herizontly for flex*/
+  color: #ffcb32;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 20px #f7f6e8;
 }
 
-@media (min-width: 1024px) {
-  .Contact .ContactRectangle {
-    padding-left: 128px;
-    padding-right: 128px;
-  }
-}
-
-.Contact .ContactRectangle p {
-  color: #936621;
-  font-size: large;
+.contact .contactRectangle p {
+  margin: 0 auto;
+  color: #ffffff;
   text-align: center;
-  font-size: 30px;
-  text-shadow: 0px 0px 30px #ad7d36;
-  border-radius: 10px;
+  font-size: 27px;
+  text-shadow: 0px 0px 30px #ffffff;
+  margin-bottom: 10px;
 }
 
-.Contact .ContactRectangle form {
+.contact .contactRectangle form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
-  background-image: url(https://static.vecteezy.com/system/resources/previews/002/985/950/non_2x/crumpled-paper-texture-background-light-brown-color-free-photo.jpg);
+  background-image: url(../Media/background/background-contact-rectangle.jpg);
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 1.5);
 }
 
-.Contact .ContactRectangle form .form-group.full {
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+textarea,
+.selectChoice {
+  font-family: "Alegreya Sans", "Trebuchet MS";
+  color: rgba(183, 104, 43, 0.955);
+  font-weight: bold;
+}
+
+.contact .contactRectangle form .fieledRectangle.full-space {
   grid-column: 1/3;
 }
 
-.Contact .ContactRectangle form .form-group label,
-.form-group.sub-title {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  display: block;
-  margin-bottom: 5px;
-  color: #936521ea;
-  text-shadow: 0px 0px 30px #9c1e579f;
-  font-size: 16px;
+.contact .contactRectangle form .fieledRectangle label,
+.fieledRectangle span {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: #604113ea;
+  text-shadow: 0px 0px 30px #9c651e9f;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5%;
 }
 
-.Contact .ContactRectangle form .form-group .form-element {
+.contact .contactRectangle form .fieledRectangle .userInput,
+.selectChoice {
   outline: none; /* when clicked it will remove the border*/
-  border: none;
+  border: 2px dashed #936521a5;
   display: block;
-  width: 100%;
+  width: 90%;
   border-radius: 8px;
   padding: 12px 16px;
   background-color: #fbefcf;
   transition: 0.4s;
+  margin-left: 5%;
+  margin-top: 5px;
 }
 
-.Contact .ContactRectangle form .form-group .form-element:focus {
+#mobileHeader {
+  display: block;
+}
+
+#countryCode {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+#mobile {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.contact .contactRectangle form .fieledRectangle .radiosRectangle {
+  outline: none; /* when clicked it will remove the border*/
+  width: 90%;
+  padding: 12px 16px;
+  margin-left: 5%;
+}
+
+.contact .contactRectangle form .fieledRectangle .radiosRectangle label {
+  font-family: "Alegreya Sans", "Trebuchet MS";
+  color: rgba(183, 104, 43, 0.955);
+  text-shadow: 0px 0px 40px #c58736;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.contact .contactRectangle form .fieledRectangle.full-space .userInput,
+#messageHeader {
+  margin-left: 2.3%;
+}
+
+.contact .contactRectangle form .fieledRectangle.full-space .userInput {
+  width: 95%;
+}
+
+.contact .contactRectangle form .fieledRectangle .userInput:focus,
+.selectChoice:focus {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
 
-.Contact .ContactRectangle form .form-group textarea {
+.contact .contactRectangle form .fieledRectangle textarea {
   min-height: 100px;
 }
 
-.Contact .ContactRectangle form .button-group {
+.contact .contactRectangle form .buttons {
   grid-column: 2 /3;
   text-align: right;
 }
 
-.Contact .ContactRectangle form .button-group input[type="submit"],
-.Contact .ContactRectangle form .button-group input[type="reset"] {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #9b2780;
-  border-radius: 8px;
-  color: #fff;
-  transition: 0.4s;
+.contact .contactRectangle form .buttons {
+  grid-column: 1/3;
 }
 
-.Contact .ContactRectangle form .submit input[type="submit"]:hover {
-  background-color: #b55291;
+.contact .contactRectangle form .buttons input[type="submit"],
+.contact .contactRectangle form .buttons input[type="reset"] {
+  border: none;
+  padding: 10px 25px;
+  background-color: #d97224d4;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.4s;
+  font-size: 20px;
+  margin-right: 2%;
+}
+
+.contact .contactRectangle form .buttons input[type="submit"]:hover,
+.contact .contactRectangle form .buttons input[type="reset"]:hover {
+  background-color: #fdb750;
 }
