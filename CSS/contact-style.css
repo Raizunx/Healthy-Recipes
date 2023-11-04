@@ -14,44 +14,19 @@
   .contact .contactRectangle form .fieledRectangle .radiosRectangle label {
     font-size: 19px;
   }
-}
 
-@media only screen and (min-width: 768px) {
-  .contact .contactRectangle p {
-    width: 80%;
-  }
-
-  header {
-    background-image: url(https://cdn.cbeditz.com/cbeditz/preview/light-wood-light-bulb-background-free-wallpaper-image-nhvlf.png);
-    box-shadow: inset 8px 8px 50px rgba(0, 0, 0, 0.763);
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 30px;
-    text-align: center;
-    position: fixed;
-    z-index: 100;
-    border-bottom: 1px solid black;
+  .menu a {
+    font-size: 1.5em;
   }
 
   header a img {
     width: 12%;
   }
+}
 
-  .menu {
-    padding-top: 7px;
-  }
-
-  .menu a {
-    text-decoration: none;
-    font-family: "Alegreya Sans";
-    color: #eae2bf;
-    font-size: 1.5em;
-    padding: 0px 20px;
-  }
-
-  .menu a:hover {
-    color: #fcbf49;
-    text-shadow: 0px 0px 30px #fdec6e; /* horizontal-shadow vertical-shadow blur-radius color */
+@media only screen and (min-width: 768px) {
+  .contact .contactRectangle p {
+    width: 80%;
   }
 
   input[type="text"],
@@ -69,6 +44,14 @@
 
   #mobile {
     width: 59%;
+  }
+
+  .menu a {
+    font-size: 1.5em;
+  }
+
+  header a img {
+    width: 16%;
   }
 }
 
@@ -93,6 +76,24 @@
   #mobile {
     width: 50%;
   }
+
+  .menu a {
+    font-size: 1.5em;
+  }
+
+  header a img {
+    width: 17%;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .menu a {
+    font-size: 1em;
+  }
+
+  header a img {
+    width: 17%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -105,23 +106,34 @@
   }
 }
 
-.navbar-brand img {
-  width: 100px;
-  margin-left: 20px;
+header {
+  background-image: url(https://cdn.cbeditz.com/cbeditz/preview/light-wood-light-bulb-background-free-wallpaper-image-nhvlf.png);
+  box-shadow: inset 8px 8px 50px rgba(0, 0, 0, 0.763);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1px solid black;
 }
 
-.navbar-brand {
-  margin-right: 0;
-  padding: 0 1em;
+.menu {
+  padding-top: 7px;
 }
-.navbar-nav {
-  align-items: center;
+
+.menu a {
+  text-decoration: none;
+  font-family: "Alegreya Sans";
+  color: #eae2bf;
+  padding: 0px 20px;
 }
-.navbar .navbar-nav.nav-link {
-  color: white;
-  font-size: 1.1em;
-  padding: 0 1em;
+
+.menu a:hover {
+  color: #fcbf49;
+  text-shadow: 0px 0px 30px #fdec6e; /* horizontal-shadow vertical-shadow blur-radius color */
 }
+
 .contact {
   width: 100%;
   min-height: 100vh;
