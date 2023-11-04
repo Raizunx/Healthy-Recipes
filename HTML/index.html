@@ -5,20 +5,21 @@
     <title>Healthy recipes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../CSS/index-style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
   </head>
 
   <body>
     <header>
       <p>Healthy recipes</p>
-      <img src="../media/logo.png" alt="logo" />
+      <img src="../Media/pageIcon/logo.png" alt="logo" />
     </header>
 
     <nav>
       <ul>
         <li><a class="active" href="welcomePage.html">Welcome</a></li>
-        <li><a href="About-us.html">About-us</a></li>
-        <li><a href="">Contact-us</a></li>
-        <li><a href="">Suggest a healthy recipe</a></li>
+        <li><a href="about-us.html">About-us</a></li>
+        <li><a href="contact-us.html">Contact-us</a></li>
       </ul>
     </nav>
 
@@ -43,7 +44,7 @@
             <figure>
               <img src="../media/pageIcon/us.png" alt="icon" />
               <caption>
-                <a href="About-us.html">About us</a>
+                <a href="about-us.html">About us</a>
               </caption>
             </figure>
           </section>
@@ -52,7 +53,7 @@
             <figure>
               <img src="../media/pageIcon/contact.png" alt="icon" />
               <caption>
-                <a href="">contact us</a>
+                <a href="contact-us.html">contact us</a>
               </caption>
             </figure>
           </section>
@@ -61,82 +62,69 @@
             <figure>
               <img src="../media/pageIcon/recipe.png" alt="icon" />
               <caption>
-                <a href="">recipies</a>
+                <a href="recipes.html">recipies</a>
               </caption>
             </figure>
           </section>
         </section>
       </section>
 
-      <section id="recipies">
-        <section class="recipe">
-          <p class="title"><strong>Salty cake </strong></p>
-          <hr />
-          <video autoplay muted controls alt="Salty cake recipe">
-            <source src="../media/videos/recipe1.MOV" type="video/mp4" />
-            your browser does not support the video
-          </video>
-          <hr />
-          <p class="typeFood">snack</p>
-          <hr />
-          <p class="ingredients">egg</p>
-          <p class="ingredients">milk</p>
-          <p class="ingredients">salt</p>
-          <p class="ingredients">vegetables</p>
-          <p class="ingredients">olive</p>
-          <p class="ingredients">cheese</p>
-          <p class="ingredients">black pepper</p>
-        </section>
+      <div class="form_Container">
+        <form method = "post" >
+          <h1 class="font-effect-shadow-multiple">Suggest a healthy recipe</h1>
 
-        <section class="recipe">
-          <p class="title"><strong>Millet cake</strong></p>
-          <hr />
-          <video muted controls alt="Salty cake recipe">
-            <source src="../media/videos/recipe2.MP4" type="video/mp4" />
-            your browser does not support the video
-          </video>
-          <hr />
-          <p class="typeFood">snack</p>
-          <hr />
-          <p class="ingredients">egg</p>
-          <p class="ingredients">Millet flour</p>
-          <p class="ingredients">dates</p>
-          <p class="ingredients">Date molasses</p>
-          <p class="ingredients">yogurt</p>
-          <p class="ingredients">olive oil</p>
-          <p class="ingredients">cinnamon</p>
-          <p class="ingredients">Vanilla</p>
-          <p class="ingredients">Baking powder</p>
-        </section>
+             <div class="input">
+                 <p>
+                    <label>Enter Your Name*:
+                      <input type = "text" name="name" size="25"
+                            required />
+                    </label>
+                  </p>
+             </div>
+             <div class="input">
+                  <p>
+                      <label>Enter Your Email*:
+                         <input type = "email"  placeholder="name@domain.com" size="25" required /> 
+                      </label>
+                  </p>
+             </div>
+             <div class="input">
+                  <p>
+                     <label>Meal Name*:
+                        <input type = "text" name="mealName" size="20" required />
+                     </label>
+                  </p>
+             </div>
+             <div class="input">
+                  <p>
+                    <label>Ingredients*:<br>
+                       <textarea name="Ingred" rows="4" cols="36" required></textarea>
+                    </label>
+                 </p>
+             </div>
+             <div class="pic">
+                 <p>
+                    <label>Upload Picture
+                       <input type = "file"  /> 
+                    </label>
+                 </p>
+             </div>
+             <div class="input">
+                 <p>
+                    <input type = "submit" value = "Submit"/>
+                    <input type = "reset" value = "Clear" />
+                 </p>  
+             </div> 
+        </form>
+      </div>
 
-        <section class="recipe">
-          <p class="title"><strong>Chicken with vegetables</strong></p>
-          <hr />
-          <video autoplay muted controls alt="Salty cake recipe">
-            <source src="../media/videos/recipe3.MOV" type="video/mp4" />
-            your browser does not support the video
-          </video>
-          <hr />
-          <p class="typeFood">lunch</p>
-          <hr />
-          <p class="ingredients">vegetables</p>
-          <p class="ingredients">onion</p>
-          <p class="ingredients">Paprika</p>
-          <p class="ingredients">Garlic powder</p>
-          <p class="ingredients">Spices mixture</p>
-          <p class="ingredients">olive oil</p>
-          <p class="ingredients">salt</p>
-          <p class="ingredients">black pepper</p>
-          <p class="ingredients">chickens</p>
-        </section>
-      </section>
     </main>
 
-    <footer>
-      <h6>
+    <section class="footer">
+      <p>
         All copyright save to &copy;Arwa Omar &copy;Shehana Anees &copy; Razan
         Abdulsalam
-      </h6>
-    </footer>
+      </p>
+    </section>
   </body>
 </html>
