@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"
@@ -9,119 +11,293 @@
 
     <link
       rel="stylesheet"
-      href="../CSS/recipe-form-style.css"
-      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans"
     />
-    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="../CSS/recipes-style.css" type="text/css" />
     <title>Add recipe</title>
   </head>
 
   <body>
-    <div class="hero">
-      <form method="post">
-        <h1 class="font-effect-shadow-multiple">Add Healthy Recipe</h1>
+    <!--navbar-->
+    <header>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about-us.html"> About Us </a>
+        <a href="#"><img src="../Media/pageIcon/logo.png" alt="Logo" /></a>
+        <a href="recipes.html"> Recipes </a>
+        <a href="contact-us.html"> Contact </a>
+      </nav>
+    </header>
 
-        <div class="input">
-          <p>
-            <label
-              >Enter Your Name:
-              <input type="text" name="name" size="25" required />
-            </label>
-          </p>
-        </div>
-        <div class="input">
-          <p>
-            <label
-              >Enter Your Email:
+    <!--Suggest recipe-->
+    <section class="suggestSection">
+      <article class="formRectangle">
+        <h1 class="title">Suggest a healthy recipe</h1>
+        <p class="sectionInfo">
+          Fill out the Form Below if you Would Like to Share a Healthy Recipe
+          with Everyone!
+        </p>
+
+        <form method="post">
+          <article class="fieledRectangle">
+            <p>
+              <label for="name">Enter Your Name <span>*</span></label>
               <input
-                type="email"
-                placeholder="name@domain.com"
+                type="text"
+                name="name"
+                id="name"
+                class="userInput"
+                placeholder="Daniel Robinson"
+                autofocus
+                minlength="5"
+                maxlength="50"
+                pattern="[a-zA-z]+"
                 size="25"
                 required
               />
-            </label>
-          </p>
-        </div>
-
-        <div class="radio">
-          <p>
-            Meal Type:<br />
-            <label
-              >Breakfast
-              <input type="radio" name="mealType" value="Breakfast" />
-            </label>
-
-            <label
-              >Lunch
-              <input type="radio" name="mealType" value="Lunch" />
-            </label>
-
-            <label
-              >Snack
-              <input type="radio" name="mealType" value="Snack" />
-            </label>
-
-            <label
-              >Drink
-              <input type="radio" name="mealType" value="Drink" />
-            </label>
-
-            <label
-              >Dinner
-              <input type="radio" name="mealType" value="Dinner" />
-            </label>
-          </p>
-        </div>
-        <div class="input">
-          <p>
-            <label
-              >Meal Name:
-              <input type="text" name="mealName" size="20" required />
-            </label>
-          </p>
-        </div>
-
-        <div class="row2">
-          <div class="input">
-            <p>
-              <label
-                >Ingredients:<br />
-                <textarea name="Ingred" rows="4" cols="36" required></textarea>
-              </label>
             </p>
-          </div>
-          <div class="input">
+          </article>
+
+          <article class="fieledRectangle">
             <p>
-              <label
-                >How to prepare:<br />
-                <textarea name="recipe" rows="4" cols="36" required></textarea>
-              </label>
+              <label for="email">Enter Your Email <span>*</span></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="userInput"
+                placeholder="daniel_robinson32@example.com"
+                minlength="6"
+                maxlength="40"
+                pattern="[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+\.[a-zA-Z]{2-4}"
+                size="25"
+                required
+              />
             </p>
-          </div>
-        </div>
-        <div class="input">
-          <p>
-            <label
-              >Total Calories:
-              <input type="text" name="cal" required />
-            </label>
-          </p>
-        </div>
-        <div class="pic">
-          <p>
-            <label
-              >Upload Picture
-              <input type="file" placeholder="Picture of the meal if exist" />
-            </label>
-          </p>
-        </div>
-        <div class="input">
-          <p>
-            <input type="submit" value="Submit" />
-            <input type="reset" value="Clear" />
-          </p>
-        </div>
-      </form>
-    </div>
+          </article>
+
+          <article class="fieledRectangle">
+            <p>
+              <label for="mealName">Meal Name <span>*</span></label>
+              <input
+                type="text"
+                name="mealName"
+                id="mealName"
+                class="userInput"
+                placeholder="Robinson"
+                minlength="2"
+                maxlength="20"
+                pattern="[a-zA-z]+"
+                size="20"
+                required
+              />
+            </p>
+          </article>
+
+          <article class="fieledRectangle">
+            <p>
+              <label for="picture">Upload Picture</label>
+              <input
+                type="file"
+                name="picture"
+                id="picture"
+                class="userInput"
+                accept=".png, .jpg, .jpeg"
+              />
+            </p>
+          </article>
+
+          <article class="fieledRectangle">
+            <p>
+              <label for="Ingredient">Ingredients <span>*</span></label>
+              <textarea
+                name="Ingredient"
+                id="Ingredient"
+                class="userInput"
+                placeholder="Write Ingredient of the Recipe, (No More Than 500 Letter),  For Example:
+2 cups Lentil
+6 Mediums Tomato, diced
+6 Mediums Cucumber, chopped
+300 g Feta Cheese, crumbled
+3 tbsp Olive oil
+1 Medium fresh lemon juice
+1 bunch fresh basil leaves, chopped
+1 pinch Salt and pepper to taste"
+                minlength="30"
+                maxlength="500"
+                rows="7"
+                cols="36"
+                required
+              ></textarea>
+            </p>
+          </article>
+
+          <article class="fieledRectangle">
+            <p>
+              <label for="Instruction">Instructions <span>*</span></label>
+              <textarea
+                name="Instruction"
+                id="Instruction"
+                class="userInput"
+                placeholder="Write Instruction of the Recipe, (No More Than 500 Letter),  For Example:
+Step1: Rinse lentils with water and then strain 
+Step2: Boil the lentils, reduce heat and simmer for 20 minutes
+Step3: Chop the tomatoes and cucumbers and crumble the cheese into cubes 
+Step4: Add the cooked lentils to a serving bowl and let cool
+Step5: Whisk together olive oil, lemon juice pepper and salt, and set aside
+Step6: Combine everything together gently stir and add the basil on the top
+Step7: Serve or cover and refrigerate until ready to serve"
+                minlength="30"
+                maxlength="500"
+                rows="7"
+                cols="36"
+                required
+              ></textarea>
+            </p>
+          </article>
+
+          <article class="buttons">
+            <p>
+              <input type="submit" value="Send" />
+              <input type="reset" value="Clear" />
+            </p>
+          </article>
+        </form>
+      </article>
+    </section>
+
+    <!--Recipes Section-->
+    <section class="recipesSection">
+      <h1 class="title">Healthy Recipes</h1>
+      <p class="sectionInfo">
+        You Can See Here All The Healthy Recipes That People Shared!
+      </p>
+
+      <article class="allRecipeRectangle">
+        <article class="recipeRectangle">
+          <article class="recipeRectangleContent">
+            <article class="frontSideRectangle">
+              <article class="recipeImage">
+                <img
+                  src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/02/instant-pot-shimp-and-broccoli-4-1.jpg?quality=82&strip=1&w=800"
+                  alt="Recipe Picture"
+                />
+              </article>
+              <article class="recipeName">
+                <p>Instant Pot Shrimp and Broccoli</p>
+              </article>
+            </article>
+            <article class="backSideRectangle">
+              <h1 class="recipeName">Instant Pot Shrimp and Broccoli</h1>
+              <span class="recipeSubTitle">Ingredients<br /></span>
+              <p class="Ingredients">
+                1 lb. shrimp, fresh or frozen/ 2 broccoli crowns/ 1/4 cup soy
+                sauce/ 2 garlic cloves, minced/ 2 Tbsp. fresh ginger, grated/ 2
+                Tbsp. oyster sauce/ 2 tsp. brown sugar/ 1 tsp. rice wine
+                vinegar/ Sesame seeds/ Sriracha/ Green onion
+              </p>
+              <span class="recipeSubTitle">Instructions<br /></span>
+              <p class="Instructions">
+                Cut the broccoli crowns into smaller florets. If you bought
+                fresh shrimp, deshell the shrimp with clean hands. If you bought
+                it frozen, make sure to thaw them overnight in the refrigerator.
+                If they need deshelling, do that as well. In your Instant Pot,
+                mix together the soy sauce, minced garlic, ginger, oyster sauce,
+                brown sugar, and rice wine vinegar. Whisk to combine. Add in the
+                broccoli and the shrimp to the Instant Pot. Seal the Instant Pot
+                and set it on high pressure (Manual or Pressure Cook) for 1
+                minute. When the buzzer goes off, release the pressure
+                immediately. Serve the shrimp and broccoli with rice, or
+                cauliflower rice to keep it low-carb, as well as sriracha,
+                sesame seeds, and sliced green onion.
+              </p>
+            </article>
+          </article>
+        </article>
+
+        <article class="recipeRectangle">
+          <article class="recipeRectangleContent">
+            <article class="frontSideRectangle">
+              <article class="recipeImage">
+                <img
+                  src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/02/instant-pot-shimp-and-broccoli-4-1.jpg?quality=82&strip=1&w=800"
+                  alt="Recipe Picture"
+                />
+              </article>
+              <article class="recipeName">
+                <p>Instant Pot Shrimp and Broccoli</p>
+              </article>
+            </article>
+            <article class="backSideRectangle">
+              <h1 class="recipeName">Instant Pot Shrimp and Broccoli</h1>
+              <span class="recipeSubTitle">Ingredients<br /></span>
+              <p class="Ingredients">
+                1 lb. shrimp, fresh or frozen/ 2 broccoli crowns/ 1/4 cup soy
+                sauce/ 2 garlic cloves, minced/ 2 Tbsp. fresh ginger, grated/ 2
+                Tbsp. oyster sauce/ 2 tsp. brown sugar/ 1 tsp. rice wine
+                vinegar/ Sesame seeds/ Sriracha/ Green onion
+              </p>
+              <span class="recipeSubTitle">Instructions<br /></span>
+              <p class="Instructions">
+                Cut the broccoli crowns into smaller florets. If you bought
+                fresh shrimp, deshell the shrimp with clean hands. If you bought
+                it frozen, make sure to thaw them overnight in the refrigerator.
+                If they need deshelling, do that as well. In your Instant Pot,
+                mix together the soy sauce, minced garlic, ginger, oyster sauce,
+                brown sugar, and rice wine vinegar. Whisk to combine. Add in the
+                broccoli and the shrimp to the Instant Pot. Seal the Instant Pot
+                and set it on high pressure (Manual or Pressure Cook) for 1
+                minute. When the buzzer goes off, release the pressure
+                immediately. Serve the shrimp and broccoli with rice, or
+                cauliflower rice to keep it low-carb, as well as sriracha,
+                sesame seeds, and sliced green onion.
+              </p>
+            </article>
+          </article>
+        </article>
+
+        <article class="recipeRectangle">
+          <article class="recipeRectangleContent">
+            <article class="frontSideRectangle">
+              <article class="recipeImage">
+                <img
+                  src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/02/instant-pot-shimp-and-broccoli-4-1.jpg?quality=82&strip=1&w=800"
+                  alt="Recipe Picture"
+                />
+              </article>
+              <article class="recipeName">
+                <p>Instant Pot Shrimp and Broccoli</p>
+              </article>
+            </article>
+            <article class="backSideRectangle">
+              <h1 class="recipeName">Instant Pot Shrimp and Broccoli</h1>
+              <span class="recipeSubTitle">Ingredients<br /></span>
+              <p class="Ingredients">
+                1 lb. shrimp, fresh or frozen/ 2 broccoli crowns/ 1/4 cup soy
+                sauce/ 2 garlic cloves, minced/ 2 Tbsp. fresh ginger, grated/ 2
+                Tbsp. oyster sauce/ 2 tsp. brown sugar/ 1 tsp. rice wine
+                vinegar/ Sesame seeds/ Sriracha/ Green onion
+              </p>
+              <span class="recipeSubTitle">Instructions<br /></span>
+              <p class="Instructions">
+                Cut the broccoli crowns into smaller florets. If you bought
+                fresh shrimp, deshell the shrimp with clean hands. If you bought
+                it frozen, make sure to thaw them overnight in the refrigerator.
+                If they need deshelling, do that as well. In your Instant Pot,
+                mix together the soy sauce, minced garlic, ginger, oyster sauce,
+                brown sugar, and rice wine vinegar. Whisk to combine. Add in the
+                broccoli and the shrimp to the Instant Pot. Seal the Instant Pot
+                and set it on high pressure (Manual or Pressure Cook) for 1
+                minute. When the buzzer goes off, release the pressure
+                immediately. Serve the shrimp and broccoli with rice, or
+                cauliflower rice to keep it low-carb, as well as sriracha,
+                sesame seeds, and sliced green onion.
+              </p>
+            </article>
+          </article>
+        </article>
+      </article>
+    </section>
   </body>
 </html>

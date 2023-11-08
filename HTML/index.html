@@ -1,130 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Healthy recipes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../CSS/index-style.css" type="text/css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Welcome</title>
+
+    <link rel="stylesheet" href="../CSS/index-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
 
-  <body>
-    <header>
-      <p>Healthy recipes</p>
-      <img src="../Media/pageIcon/logo.png" alt="logo" />
-    </header>
-
-    <nav>
-      <ul>
-        <li><a class="active" href="welcomePage.html">Welcome</a></li>
-        <li><a href="about-us.html">About-us</a></li>
-        <li><a href="contact-us.html">Contact-us</a></li>
-      </ul>
+  <header>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about-us.html"> About Us </a>
+      <a href="#"><img src="../Media/pageIcon/logo.png" alt="Logo" /></a>
+      <a href="recipes.html"> Recipes </a>
+      <a href="contact-us.html"> Contact </a>
     </nav>
+  </header>
 
+  <body>
     <main>
-      <section class="purposeAndLinks">
-        <section id="paragraph">
-          <p>
-            This site aims to create a base that includes many delicious healthy
-            recipes!.<br />
+      <section class="main">
+        <article class="mainRectangle">
+          <h1>Welcome To Healthy Recipes </h1>
+
+           <p>
+            The goal of this site is to encourage community members to follow a healthy diet 
+            by displaying recipes for healthy and delicious dishes that are easy to prepare. 
+            Users can also share their healthy recipes to benefit others.
           </p>
-          <p>
-            To refute all the ideas spread regarding the lack of healthy dishes
-            recipes, to encourage all members of society to transform their
-            lifestyle into a healthier one, which raises the general health
-            level and to create a collaborative environment among those
-            interested, where recipes are exchanged.
-          </p>
-        </section>
-
-        <section id="otherPages">
-          <section class="boxIcon">
-            <figure>
-              <img src="../media/pageIcon/us.png" alt="icon" />
-              <caption>
-                <a href="about-us.html">About us</a>
-              </caption>
-            </figure>
-          </section>
-
-          <section class="boxIcon">
-            <figure>
-              <img src="../media/pageIcon/contact.png" alt="icon" />
-              <caption>
-                <a href="contact-us.html">contact us</a>
-              </caption>
-            </figure>
-          </section>
-
-          <section class="boxIcon">
-            <figure>
-              <img src="../media/pageIcon/recipe.png" alt="icon" />
-              <caption>
-                <a href="recipes.html">recipies</a>
-              </caption>
-            </figure>
-          </section>
-        </section>
+          </article>
       </section>
-
-      <div class="form_Container">
-        <form method = "post" >
-          <h1 class="font-effect-shadow-multiple">Suggest a healthy recipe</h1>
-
-             <div class="input">
-                 <p>
-                    <label>Enter Your Name*:
-                      <input type = "text" name="name" size="25"
-                            required />
-                    </label>
-                  </p>
-             </div>
-             <div class="input">
-                  <p>
-                      <label>Enter Your Email*:
-                         <input type = "email"  placeholder="name@domain.com" size="25" required /> 
-                      </label>
-                  </p>
-             </div>
-             <div class="input">
-                  <p>
-                     <label>Meal Name*:
-                        <input type = "text" name="mealName" size="20" required />
-                     </label>
-                  </p>
-             </div>
-             <div class="input">
-                  <p>
-                    <label>Ingredients*:<br>
-                       <textarea name="Ingred" rows="4" cols="36" required></textarea>
-                    </label>
-                 </p>
-             </div>
-             <div class="pic">
-                 <p>
-                    <label>Upload Picture
-                       <input type = "file"  /> 
-                    </label>
-                 </p>
-             </div>
-             <div class="input">
-                 <p>
-                    <input type = "submit" value = "Submit"/>
-                    <input type = "reset" value = "Clear" />
-                 </p>  
-             </div> 
-        </form>
-      </div>
-
     </main>
-
-    <section class="footer">
-      <p>
-        All copyright save to &copy;Arwa Omar &copy;Shehana Anees &copy; Razan
-        Abdulsalam
-      </p>
-    </section>
   </body>
 </html>

@@ -35,13 +35,13 @@
         <article class="contactRectangle">
           <h1>Contact Us</h1>
           <p>
-            Fill out the form below to get in touch with us. If we do not reply
-            within 48 hours please feel free to use the form again
+            Fill Out The Form Below to Get in Touch With us. If we do not Reply
+            Within 48 Hours Please Feel Free to Use The Form Again
           </p>
 
           <form method="post" autocomplete="on">
             <article class="fieledRectangle">
-              <label for="firstName">First Name</label>
+              <label for="firstName">First Name <i class="red">*</i></label>
               <input
                 type="text"
                 name="firstName"
@@ -57,7 +57,7 @@
             </article>
 
             <article class="fieledRectangle">
-              <label for="lastName">Last Name</label>
+              <label for="lastName">Last Name <i class="red">*</i></label>
               <input
                 type="text"
                 name="lastName"
@@ -72,7 +72,7 @@
             </article>
 
             <article class="fieledRectangle">
-              <label id="mobileHeader" for="mobile">Mobile</label>
+              <label id="mobileHeader" for="mobile">Mobile <i class="red">*</i></label>
 
               <select id="countryCode" name="countryCode" class="selectChoice">
                 <option value="+966" selected>+966</option>
@@ -117,7 +117,6 @@
                   class="radioChoice"
                   name="gender"
                   value="female"
-                  checked
                 />
               </article>
             </article>
@@ -133,7 +132,7 @@
             </article>
 
             <article class="fieledRectangle">
-              <label for="email">Email address</label>
+              <label for="email">Email address <i class="red">*</i></label>
               <input
                 type="email"
                 name="email"
@@ -151,14 +150,14 @@
               <label for="language">Language</label>
               <select name="language" id="language" class="selectChoice">
                 <option value="Arabic">Arabic</option>
-                <option value="English">English</option>
+                <option value="English" selected>English</option>
                 <option value="French">French</option>
                 <option value="Germany">Germany</option>
               </select>
             </article>
 
             <article class="fieledRectangle">
-              <span>Type of Message</span>
+              <span>Type of Message <i class="red">*</i></span>
 
               <article class="radiosRectangle">
                 <label for="problem">Problem</label>
@@ -192,7 +191,7 @@
             </article>
 
             <article class="fieledRectangle full-space">
-              <label for="message" id="messageHeader">Message</label>
+              <label for="message" id="messageHeader">Message <i class="red">*</i></label>
               <textarea
                 name="message"
                 id="message"
@@ -202,11 +201,12 @@
                 maxlength="250"
                 cols="50"
                 rows="5"
+                required
               ></textarea>
             </article>
 
             <article class="buttons">
-              <input type="submit" value="Sned" />
+              <input type="submit" value="Send" />
               <input type="reset" value="Clear" />
             </article>
           </form>
