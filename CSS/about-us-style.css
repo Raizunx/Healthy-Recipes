@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
   font-family: "Alegreya Sans";
   margin: 0;
@@ -149,18 +148,6 @@ table tbody tr td a:hover {
   color: white;
 }
 
-footer {
-  color: white;
-  text-align: center;
-  font-size: large;
-  width: 100%;
-  padding-top: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
 @media (max-width: 600px) {
   /*header*/
   header img {
@@ -184,13 +171,6 @@ footer {
     display: flex;
     justify-content: center;
   }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
 }
 
 @media (max-width: 800px) and (min-width: 601px) {
@@ -212,14 +192,6 @@ footer {
   .table {
     display: flex;
     justify-content: center;
-  }
-
-  footer {
-    font-weight: bolder;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
 }
 
@@ -244,192 +216,21 @@ footer {
     display: flex;
     justify-content: center;
   }
-
-  footer {
-    font-weight: bolder;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-}
-=======
-* {
-  font-family: "Alegreya Sans";
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* to make any child container do not go out the parent container*/
-  scroll-behavior: smooth;
 }
 
-@media only screen and (min-width: 992px) {
-
-  .menu a {
-    font-size: 1.5em;
-  }
-
-  header a img {
-    width: 12%;
-  }
+footer {
+    background-image:url(../Media/background/headerBackground.png);
+    padding: 0.05em;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid  rgb(109, 58, 0);
+    border-top: 2px solid  rgb(109, 58, 0);
 }
 
-@media only screen and (max-width: 992px) {
-
-  header a img {
-    width: 16%;
-  }
+.footer p {
+    text-shadow: 0px 0px 30px #ffffff; 
+    color: white;
+    font-size: large;
+    padding-top: 10px;
+    font-weight: 600px;
 }
-
-@media only screen and (min-width: 768px) {
-  
-
-  .menu a {
-    font-size: 1.5em;
-  }
-
-}
-
-@media only screen and (max-width: 768px) {
-  
-
-  .menu a {
-    font-size: 1.5em;
-  }
-
-  header a img {
-    width: 17%;
-  }
-}
-
-@media only screen and (max-width: 666px) {
-  .menu a {
-    font-size: 1em;
-  }
-
-  header a img {
-    width: 17%;
-  }
-}
-
-
-header {
-  background-image: url(https://cdn.cbeditz.com/cbeditz/preview/light-wood-light-bulb-background-free-wallpaper-image-nhvlf.png);
-  box-shadow: inset 8px 8px 50px rgba(0, 0, 0, 0.763);
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px 30px;
-  text-align: center;
-  position: fixed;
-  z-index: 100;
-  border-bottom: 1px solid black;
-}
-
-.menu {
-  padding-top: 7px;
-}
-
-.menu a {
-  text-decoration: none;
-  font-family: "Alegreya Sans";
-  color: #eae2bf;
-  padding: 0px 20px;
-}
-
-.menu a:hover {
-  color: #fcbf49;
-  text-shadow: 0px 0px 30px #fdec6e; /* horizontal-shadow vertical-shadow blur-radius color */
-}
-
-.main {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url(../Media/background/background-contact-section.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  padding-top: 110px;
-  padding-bottom: 50px;
-}
-
-.main .mainRectangle {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.main .mainRectangle h1 {
-  display: flex;
-  justify-content: center; /*made text in middile herizontly for flex*/
-  color: #ffcb32;
-  font-size: 3em;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-shadow: 0px 0px 20px #f7f6e8;
-}
-
-/*table*/
-
-table thead,
-table tbody {
-  background-color: #2f601082;
-  border: 2px solid rgb(132, 61, 23);
-  color: #eae2bf;
-}
-
-
-table tbody td:hover {
-  background-color: #679217;
-  color: white;
-}
-
-table thead th.name {
-  text-align: center;
-  font-size: 27px;
-  padding: 10px;
-  border: 4px solid rgb(87, 39, 13);
-  font-family: "serif ";
-  color:#f6e38d ;
-}
-
-table tbody tr th {
-  text-align: left;
-  font-size: x-large;
-  width: 11%;
-  border: 4px solid rgb(87, 39, 13);
-  font-family: "serif ";
-  color:#f6e38d ;
-}
-
-table tbody td {
-  text-align: center;
-  font-size: 25px;
-  border: 4px solid rgb(87, 39, 13);
-  font-family: "serif ";
-
-}
-
-/*table icon*/
-table img {
-  width: 25%;
-}
-
-/*link in table*/
-table tbody tr#projects a {
-  color: #f4d759;
-}
-
-table tbody tr#projects a:hover {
-  color: white;
-}
-
-table tbody tr td a {
-  text-decoration: none;
-  color: #eae2bf;
-}
-
-table tbody tr td a:hover {
-  color: white;
-}
->>>>>>> f49763282412e2fa5ebd15af9379129299e587ed
