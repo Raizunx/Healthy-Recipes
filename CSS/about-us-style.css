@@ -84,7 +84,7 @@ nav {
   padding-right: 32px;
 }
 
-.main .mainRectangle h1 {
+.main .mainRectangle h2 {
   display: flex;
   justify-content: center; /*made text in middile herizontly for flex*/
   color: #ffcb32;

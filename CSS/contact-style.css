@@ -76,7 +76,7 @@ nav {
   padding-right: 32px;
 }
 
-.contact .contactRectangle h1 {
+.contact .contactRectangle h2 {
   display: flex;
   justify-content: center; /*made text in middile herizontly for flex*/
   color: #ffcb32;

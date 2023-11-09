@@ -183,6 +183,9 @@ textarea {
 }
 
 /*Recipes Section*/
+.recipesSection .title{
+  margin-top: 3.5%;
+}
 .recipesSection .allRecipeRectangle {
   margin-top: 30px;
   display: flex;
@@ -240,7 +243,7 @@ textarea {
   font-size: 13px;
   font-weight: bold;
   text-align: left;
-  padding: 5%;
+  padding: 2px;
 }
 
 /*Flip Rectangle*/
