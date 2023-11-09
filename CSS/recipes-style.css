@@ -9,7 +9,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../Media/background/background-contact-section.jpg);
+  background-image: url(../Media/background/background-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -26,7 +26,7 @@ body {
 /*header*/
 header {
   background-color: #27180e;
-  background-image: url(https://cdn.cbeditz.com/cbeditz/preview/light-wood-light-bulb-background-free-wallpaper-image-nhvlf.png);
+  background-image: url(../Media/background/wood-background.png);
   width: 100%;
   margin: 0 auto;
   padding: 10px 30px;
@@ -90,7 +90,7 @@ main {
 .suggestSection {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../Media/background/background-contact-section.jpg);
+  background-image: url(../Media/background/background-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -108,7 +108,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  background-image: url(../Media/background/background-contact-rectangle.jpg);
+  background-image: url(../Media/background/background-rectangle.jpg);
   padding: 32px;
   border-radius: 16px;
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 1.5);
