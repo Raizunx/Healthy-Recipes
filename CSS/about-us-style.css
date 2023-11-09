@@ -1,9 +1,24 @@
 * {
-  font-family: "Alegreya Sans";
+  font-family:"Trebuchet MS";
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* to make any child container do not go out the parent container*/
   scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-image: url(../Media/background/background-contact-section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  grid-gap: 20px;
+}
+
+#headerNav {
+  grid-row: 1/2;
 }
 
 /*header*/
@@ -15,12 +30,10 @@ header {
   padding: 10px 30px;
   text-align: center;
   color: white;
-  position: fixed;
-  z-index: 100;
 }
 
 header img {
-  width: 15%;
+  width: 20%;
 }
 
 /*nav*/
@@ -32,20 +45,13 @@ nav {
   padding: 10px 30px;
   text-align: center;
   font-size: x-large;
-  position: fixed;
-  z-index: 100;
   border-bottom: 1px solid black;
   border-top: 4px solid black;
-  margin-top: 93px;
-}
-
-.menu {
-  padding-top: 7px;
 }
 
 .menu a {
   text-decoration: none;
-  font-family: "Alegreya Sans";
+  font-family:"Trebuchet MS";
   color: #eae2bf;
   padding: 0px 20px;
 }
@@ -57,15 +63,18 @@ nav {
 
 /*main content*/
 .main {
+  grid-row: 2/3;
   width: 100%;
   min-height: 100vh;
-  background-image: url(../Media/background/background-contact-section.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  padding-top: 110px;
-  padding-bottom: 50px;
+}
+
+.sectionInfo {
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  font-size: 27px;
+  text-shadow: 0px 0px 30px #ffffff;
+  margin-bottom: 10px;
 }
 
 .main .mainRectangle {
@@ -73,7 +82,6 @@ nav {
   margin: 0 auto;
   padding-left: 32px;
   padding-right: 32px;
-  margin-top: 70px;
 }
 
 .main .mainRectangle h1 {
@@ -83,19 +91,26 @@ nav {
   font-size: 3em;
   font-weight: 600;
   margin-bottom: 10px;
-  text-shadow: 0px 0px 20px #f7f6e8;
+  text-shadow: 0px 0px 20px #d4d3c0;
 }
 
 /*table*/
+.table {
+  display: flex;
+  justify-content: center;
+  background-image: url(../Media/background/background-contact-rectangle.jpg);
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 1.5);
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
 table thead,
 table tbody {
-  background-color: #2f601057;
-  border: 4px solid rgba(0, 0, 0, 0.836);
-  color: #eae2bf;
+  color: #b7682b;
 }
 
 table tbody td:hover {
-  background-color: #679217;
+  background-color: #382315c7;
   color: white;
 }
 
@@ -103,26 +118,23 @@ table thead th.name {
   text-align: center;
   font-size: 27px;
   padding: 10px;
-  border: 4px solid black;
-  font-family: "serif ";
-  color: #f6e38d;
+  font-family:"Trebuchet MS";
+  color: #604113ea;
 }
 
 table tbody tr th {
   text-align: left;
   font-size: x-large;
   width: 15%;
-  border: 4px solid black;
-  font-family: "serif ";
-  color: #f6e38d;
+  font-family:"Trebuchet MS";
+  color: #604113ea;
   padding-left: 5px;
 }
 
 table tbody td {
   text-align: center;
   font-size: 25px;
-  border: 4px solid black;
-  font-family: "serif ";
+  font-family:"Trebuchet MS";
 }
 
 /*table icon*/
@@ -132,7 +144,7 @@ table img {
 
 /*link in table*/
 table tbody tr#projects a {
-  color: #f4d759;
+  color: #b7682bf4;
 }
 
 table tbody tr#projects a:hover {
@@ -141,11 +153,34 @@ table tbody tr#projects a:hover {
 
 table tbody tr td a {
   text-decoration: none;
-  color: #eae2bf;
+  color: rgb(0, 0, 0);
 }
 
 table tbody tr td a:hover {
   color: white;
+}
+
+table td + td {
+  border-left: 1px solid black;
+}
+
+/*footer*/
+footer {
+  background-color: #27180e;
+  padding: 0.05em;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(109, 58, 0);
+  border-top: 2px solid rgb(109, 58, 0);
+  grid-row: 3/4;
+}
+
+.footer p {
+  text-shadow: 0px 0px 30px #ffffff;
+  color: white;
+  font-size: large;
+  padding-top: 10px;
+  font-weight: 600px;
 }
 
 @media (max-width: 600px) {
@@ -153,84 +188,10 @@ table tbody tr td a:hover {
   header img {
     width: 30%;
   }
-
-  /*nav*/
-  nav {
-    margin-top: 60px;
-  }
-
-  /*main content*/
-  .main .mainRectangle {
-    margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-top: 15px;
-  }
-  /*table*/
-  .table {
-    display: flex;
-    justify-content: center;
-  }
 }
 
-@media (max-width: 800px) and (min-width: 601px) {
-  /*header*/
+@media (max-width: 1500px) and (min-width: 601px) {
   header img {
     width: 40%;
   }
-
-  /*nav*/
-  nav {
-    margin-top: 100px;
-  }
-
-  /*main content*/
-  .main .mainRectangle {
-    margin-top: 60px;
-  }
-  /*table*/
-  .table {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 1500px) and (min-width: 801px) {
-  /*header*/
-  header img {
-    width: 40%;
-  }
-
-  /*nav*/
-  nav {
-    margin-top: 125px;
-    font-size: xx-large;
-  }
-
-  /*main content*/
-  .main .mainRectangle {
-    margin-top: 100px;
-  }
-  /*table*/
-  .table {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-footer {
-    background-image:url(../Media/background/headerBackground.png);
-    padding: 0.05em;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid  rgb(109, 58, 0);
-    border-top: 2px solid  rgb(109, 58, 0);
-}
-
-.footer p {
-    text-shadow: 0px 0px 30px #ffffff; 
-    color: white;
-    font-size: large;
-    padding-top: 10px;
-    font-weight: 600px;
 }

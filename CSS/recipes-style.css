@@ -1,51 +1,9 @@
 * {
-  font-family: "Alegreya Sans";
+  font-family:"Trebuchet MS";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-@media only screen and (min-width: 992px) {
-  .menu a {
-    font-size: 1.5em;
-  }
-
-  header a img {
-    width: 12%;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  header a img {
-    width: 16%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .menu a {
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .menu a {
-    font-size: 1.5em;
-  }
-
-  header a img {
-    width: 17%;
-  }
-}
-
-@media only screen and (max-width: 666px) {
-  .menu a {
-    font-size: 1em;
-  }
-
-  header a img {
-    width: 17%;
-  }
 }
 
 body {
@@ -56,28 +14,46 @@ body {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+}
+
+#headerNav {
+  grid-row: 1/2;
 }
 
 /*header*/
 header {
-  background-image: url(../Media/background/wood-background.png);
+  background-color: #27180e;
+  background-image: url(https://cdn.cbeditz.com/cbeditz/preview/light-wood-light-bulb-background-free-wallpaper-image-nhvlf.png);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  text-align: center;
+  color: white;
+}
+
+header img {
+  width: 20%;
+}
+
+/*nav*/
+nav {
+  background-image: url(../media/background/headerBackground.png);
   box-shadow: inset 8px 8px 50px rgba(0, 0, 0, 0.763);
   width: 100%;
   margin: 0 auto;
   padding: 10px 30px;
   text-align: center;
-  position: fixed;
-  z-index: 100;
+  font-size: x-large;
   border-bottom: 1px solid black;
-}
-
-.menu {
-  padding-top: 7px;
+  border-top: 4px solid black;
 }
 
 .menu a {
   text-decoration: none;
-  font-family: "Alegreya Sans";
+  font-family:"Trebuchet MS";
   color: #eae2bf;
   padding: 0px 20px;
 }
@@ -85,6 +61,10 @@ header {
 .menu a:hover {
   color: #fcbf49;
   text-shadow: 0px 0px 30px #fdec6e; /* horizontal-shadow vertical-shadow blur-radius color */
+}
+
+main {
+  grid-row: 2/3;
 }
 
 /*form*/
@@ -95,7 +75,7 @@ header {
   font-size: 3em;
   font-weight: 600;
   margin-bottom: 10px;
-  text-shadow: 0px 0px 20px #f7f6e8;
+  text-shadow: 0px 0px 20px #d4d3c0;
 }
 
 .sectionInfo {
@@ -115,8 +95,6 @@ header {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  padding-top: 110px;
-  padding-bottom: 50px;
 }
 
 .suggestSection .formRectangle {
@@ -140,13 +118,13 @@ input[type="text"],
 input[type="file"],
 input[type="email"],
 textarea {
-  font-family: "Alegreya Sans", "Trebuchet MS";
-  color: rgba(183, 104, 43, 0.955);
+  font-family:"Trebuchet MS";
+  color: #b7682bf4;
   font-weight: bold;
 }
 
 .suggestSection .formRectangle form .fieledRectangle label {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family:"Trebuchet MS", "Arial Narrow", Arial, sans-serif;
   color: #604113ea;
   text-shadow: 0px 0px 30px #9c651e9f;
   font-size: 20px;
@@ -205,7 +183,6 @@ textarea {
 }
 
 /*Recipes Section*/
-
 .recipesSection .allRecipeRectangle {
   margin-top: 30px;
   display: flex;
@@ -233,7 +210,7 @@ textarea {
 
 .recipeName,
 .backSideRectangle span {
-  font-family: "Alegreya Sans", "Franklin Gothic Medium", "Arial Narrow Bold",
+  font-family:"Trebuchet MS","Alegreya Sans", "Franklin Gothic Medium", "Arial Narrow Bold",
     sans-serif;
   text-shadow: 0px 0px 30px #eae470;
   font-size: 1.2em;
@@ -257,10 +234,10 @@ textarea {
 
 .backSideRectangle .Ingredients,
 .backSideRectangle .Instructions {
-  font-family: "Alegreya Sans", "Franklin Gothic Medium", "Arial Narrow Bold",
+  font-family:"Trebuchet MS", "Alegreya Sans", "Franklin Gothic Medium", "Arial Narrow Bold",
     sans-serif;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   text-align: left;
   padding: 5%;
@@ -305,18 +282,32 @@ textarea {
 }
 
 footer {
-  background-image:url(../Media/background/headerBackground.png);
+  grid-row: 3/4;
+  background-color: #27180e;
   padding: 0.05em;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid  rgb(109, 58, 0);
-  border-top: 2px solid  rgb(109, 58, 0);
+  border-bottom: 1px solid rgb(109, 58, 0);
+  border-top: 2px solid rgb(109, 58, 0);
 }
 
 .footer p {
-  text-shadow: 0px 0px 30px #ffffff; 
+  text-shadow: 0px 0px 30px #ffffff;
   color: white;
   font-size: large;
   padding-top: 10px;
   font-weight: 600px;
+}
+
+@media (max-width: 600px) {
+  /*header*/
+  header img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 601px) {
+  header img {
+    width: 40%;
+  }
 }

@@ -1,9 +1,252 @@
 * {
-  font-family: "Alegreya Sans";
+  font-family:"Trebuchet MS";
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* to make any child container do not go out the parent container*/
   scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-image: url(../Media/background/background-contact-section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-gap: 20px;
+}
+
+#headerNav {
+  grid-row: 1/2;
+}
+
+/*header*/
+header {
+  background-color: #27180e;
+  background-image: url(https://cdn.cbeditz.com/cbeditz/preview/light-wood-light-bulb-background-free-wallpaper-image-nhvlf.png);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  text-align: center;
+  color: white;
+}
+
+header img {
+  width: 20%;
+}
+
+/*nav*/
+nav {
+  background-image: url(../media/background/headerBackground.png);
+  box-shadow: inset 8px 8px 50px rgba(0, 0, 0, 0.763);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: x-large;
+  border-bottom: 1px solid black;
+  border-top: 4px solid black;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family:"Trebuchet MS";;
+  color: #eae2bf;
+  padding: 0px 20px;
+}
+
+.menu a:hover {
+  color: #fcbf49;
+  text-shadow: 0px 0px 30px #fdec6e; /* horizontal-shadow vertical-shadow blur-radius color */
+}
+
+.contact {
+  grid-row: 2/3;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.contact .contactRectangle {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.contact .contactRectangle h1 {
+  display: flex;
+  justify-content: center; /*made text in middile herizontly for flex*/
+  color: #ffcb32;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 20px #d4d3c0;
+}
+
+.contact .contactRectangle p {
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  font-size: 27px;
+  text-shadow: 0px 0px 30px #ffffff;
+  margin-bottom: 10px;
+}
+
+.contact .contactRectangle form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  background-image: url(../Media/background/background-contact-rectangle.jpg);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 1.5);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+textarea,
+.selectChoice {
+  font-family: "Trebuchet MS";
+  color: rgba(183, 104, 43, 0.955);
+  font-weight: bold;
+}
+
+.contact .contactRectangle form .fieledRectangle.full-space {
+  grid-column: 1/3;
+}
+
+.contact .contactRectangle form .fieledRectangle label,
+.fieledRectangle span {
+  font-family:"Trebuchet MS", "Arial Narrow", Arial, sans-serif;
+  color: #604113ea;
+  text-shadow: 0px 0px 30px #9c651e9f;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.red {
+  color: firebrick;
+}
+
+.contact .contactRectangle form .fieledRectangle .userInput,
+.selectChoice {
+  outline: none; /* when clicked it will remove the border*/
+  border: 2px dashed #936521a5;
+  display: block;
+  width: 90%;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: #fbefcf;
+  transition: 0.4s;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+
+#mobileHeader {
+  display: block;
+}
+
+#countryCode {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+#mobile {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.contact .contactRectangle form .fieledRectangle .radiosRectangle {
+  outline: none; /* when clicked it will remove the border*/
+  width: 90%;
+  padding: 12px 16px;
+  margin-left: 5%;
+}
+
+.contact .contactRectangle form .fieledRectangle .radiosRectangle label {
+  font-family:"Trebuchet MS";
+  color: rgba(183, 104, 43, 0.955);
+  text-shadow: 0px 0px 40px #c58736;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.contact .contactRectangle form .fieledRectangle.full-space .userInput,
+#messageHeader {
+  margin-left: 2.3%;
+}
+
+.contact .contactRectangle form .fieledRectangle.full-space .userInput {
+  width: 95%;
+  font-size: 18px;
+}
+
+.contact .contactRectangle form .fieledRectangle .userInput:focus,
+.selectChoice:focus {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.contact .contactRectangle form .fieledRectangle textarea {
+  min-height: 100px;
+}
+
+.contact .contactRectangle form .buttons {
+  grid-column: 1 /3;
+  text-align: right;
+}
+
+.contact .contactRectangle form .buttons input[type="submit"],
+.contact .contactRectangle form .buttons input[type="reset"] {
+  border: none;
+  padding: 10px 25px;
+  background-color: #d97224d4;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.4s;
+  font-size: 20px;
+  margin-right: 2%;
+}
+
+.contact .contactRectangle form .buttons input[type="submit"]:hover,
+.contact .contactRectangle form .buttons input[type="reset"]:hover {
+  background-color: #fdb750;
+}
+
+footer {
+  grid-row: 3/4;
+  background-color: #27180e;
+  padding: 0.05em;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(109, 58, 0);
+  border-top: 2px solid rgb(109, 58, 0);
+}
+
+.footer p {
+  text-shadow: 0px 0px 30px #ffffff;
+  color: white;
+  font-size: large;
+  padding-top: 10px;
+  font-weight: 600px;
+}
+
+@media (max-width: 600px) {
+  header img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 601px) {
+  header img {
+    width: 40%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -13,21 +256,6 @@
 
   .contact .contactRectangle form .fieledRectangle .radiosRectangle label {
     font-size: 19px;
-  }
-
-  .menu a {
-    font-size: 1.5em;
-  }
-
-  header a img {
-    width: 12%;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-
-  header a img {
-    width: 16%;
   }
 }
 
@@ -52,11 +280,6 @@
   #mobile {
     width: 59%;
   }
-
-  .menu a {
-    font-size: 1.5em;
-  }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -108,211 +331,4 @@
   .contact .contactRectangle form .fieledRectangle .radiosRectangle label {
     font-size: 15px;
   }
-}
-
-header {
-  background-image: url(../Media/background/wood-background.png);
-  box-shadow: inset 8px 8px 50px rgba(0, 0, 0, 0.763);
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px 30px;
-  text-align: center;
-  position: fixed;
-  z-index: 100;
-  border-bottom: 1px solid black;
-}
-
-.menu {
-  padding-top: 7px;
-}
-
-.menu a {
-  text-decoration: none;
-  font-family: "Alegreya Sans";
-  color: #eae2bf;
-  padding: 0px 20px;
-}
-
-.menu a:hover {
-  color: #fcbf49;
-  text-shadow: 0px 0px 30px #fdec6e; /* horizontal-shadow vertical-shadow blur-radius color */
-}
-
-.contact {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url(../Media/background/background-contact-section.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  padding-top: 110px;
-  padding-bottom: 50px;
-}
-
-.contact .contactRectangle {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.contact .contactRectangle h1 {
-  display: flex;
-  justify-content: center; /*made text in middile herizontly for flex*/
-  color: #ffcb32;
-  font-size: 3em;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-shadow: 0px 0px 20px #f7f6e8;
-}
-
-.contact .contactRectangle p {
-  margin: 0 auto;
-  color: #ffffff;
-  text-align: center;
-  font-size: 27px;
-  text-shadow: 0px 0px 30px #ffffff;
-  margin-bottom: 10px;
-}
-
-.contact .contactRectangle form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-  background-image: url(../Media/background/background-contact-rectangle.jpg);
-  padding: 32px;
-  border-radius: 16px;
-  box-shadow: 0px 6px 50px rgba(0, 0, 0, 1.5);
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="date"],
-input[type="email"],
-textarea,
-.selectChoice {
-  font-family: "Alegreya Sans", "Trebuchet MS";
-  color: rgba(183, 104, 43, 0.955);
-  font-weight: bold;
-}
-
-.contact .contactRectangle form .fieledRectangle.full-space {
-  grid-column: 1/3;
-}
-
-.contact .contactRectangle form .fieledRectangle label,
-.fieledRectangle span {
-  font-family: "Arial Narrow", Arial, sans-serif;
-  color: #604113ea;
-  text-shadow: 0px 0px 30px #9c651e9f;
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 5%;
-}
-
-.red {
-  color:firebrick;
-}
-
-.contact .contactRectangle form .fieledRectangle .userInput,
-.selectChoice{
-  outline: none; /* when clicked it will remove the border*/
-  border: 2px dashed #936521a5;
-  display: block;
-  width: 90%;
-  border-radius: 8px;
-  padding: 12px 16px;
-  background-color: #fbefcf;
-  transition: 0.4s;
-  margin-left: 5%;
-  margin-top: 5px;
-}
-
-#mobileHeader {
-  display: block;
-}
-
-#countryCode {
-  display: inline-block;
-  margin-top: 2px;
-}
-
-#mobile {
-  display: inline-block;
-  margin-left: 3px;
-}
-
-.contact .contactRectangle form .fieledRectangle .radiosRectangle {
-  outline: none; /* when clicked it will remove the border*/
-  width: 90%;
-  padding: 12px 16px;
-  margin-left: 5%;
-}
-
-.contact .contactRectangle form .fieledRectangle .radiosRectangle label {
-  font-family: "Alegreya Sans", "Trebuchet MS";
-  color: rgba(183, 104, 43, 0.955);
-  text-shadow: 0px 0px 40px #c58736;
-  font-weight: bold;
-  margin-left: 5%;
-}
-
-.contact .contactRectangle form .fieledRectangle.full-space .userInput,
-#messageHeader {
-  margin-left: 2.3%;
-}
-
-.contact .contactRectangle form .fieledRectangle.full-space .userInput {
-  width: 95%;
-  font-size: 18px;
-}
-
-.contact .contactRectangle form .fieledRectangle .userInput:focus,
-.selectChoice:focus {
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-}
-
-.contact .contactRectangle form .fieledRectangle textarea {
-  min-height: 100px;
-}
-
-.contact .contactRectangle form .buttons {
-  grid-column: 1 /3;
-  text-align: right;
-}
-
-.contact .contactRectangle form .buttons input[type="submit"],
-.contact .contactRectangle form .buttons input[type="reset"] {
-  border: none;
-  padding: 10px 25px;
-  background-color: #d97224d4;
-  border-radius: 5px;
-  color: #fff;
-  transition: 0.4s;
-  font-size: 20px;
-  margin-right: 2%;
-}
-
-.contact .contactRectangle form .buttons input[type="submit"]:hover,
-.contact .contactRectangle form .buttons input[type="reset"]:hover {
-  background-color: #fdb750;
-}
-
-footer {
-  background-image:url(../Media/background/headerBackground.png);
-  padding: 0.05em;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid  rgb(109, 58, 0);
-  border-top: 2px solid  rgb(109, 58, 0);
-}
-
-.footer p {
-  text-shadow: 0px 0px 30px #ffffff; 
-  color: white;
-  font-size: large;
-  padding-top: 10px;
-  font-weight: 600px;
 }
