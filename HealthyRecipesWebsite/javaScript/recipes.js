@@ -8,8 +8,9 @@ document
     let mealName = document.getElementById("mealName").value;
     let Ingredient = document.getElementById("Ingredient").value;
     let Instruction = document.getElementById("Instruction").value;
+    let recipeID = Date.now() + email;
 
-    fetch("/insert", {
+    fetch("/recipeInsert", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -20,6 +21,7 @@ document
         mealName: mealName,
         Ingredient: Ingredient,
         Instruction: Instruction,
+        recipeID: recipeID,
       }),
     })
       .then(function (response) {
@@ -37,7 +39,7 @@ document
       })
       .catch(function (error) {
         console.error("Error:", error);
-        alert("An error occurred!");
+        alert("An error occurred at recipes.js!");
       });
   });
 

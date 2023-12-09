@@ -16,7 +16,7 @@ const pool = Mysql.createPool({
 //serving static routing
 app.use("/", express.static("./HealthyRecipesWebsite"));
 
-//json routing to Insert the user data
+//json routing to Insert the user data to contact with us
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.post("/insert", (request, response) => {
@@ -37,6 +37,33 @@ app.post("/insert", (request, response) => {
   pool.query(query, data, (error, result) => {
     if (error) throw error;
     response.send("Data inserted successfully!");
+  });
+});
+
+//json routing to Insert the recipes data
+app.post("/recipeInsert", (request, response) => {
+  const data = {
+    name: request.body.name,
+    email: request.body.email,
+    mealName: request.body.mealName,
+    Ingredient: request.body.Ingredient,
+    Instruction: request.body.Instruction,
+    recipeID: request.body.recipeID,
+  };
+  const query = "INSERT INTO recipes SET ?";
+
+  pool.query(query, data, (error, result) => {
+    if (error) throw error;
+    response.send("Your recipe has been received. Thank you");
+  });
+});
+// View data route
+app.get("/view", (request, response) => {
+  const query = "SELECT mealName,Ingredient,Instruction FROM recipes";
+
+  pool.query(query, (error, result) => {
+    if (error) throw error;
+    response.json(result);
   });
 });
 
