@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../CSS/recipes-style.css" type="text/css" />
+    <title>Add recipe</title>
+    <script src="../javaScript/recipes.js" defer></script>
+
+  </head>
+
+  <body>
+    <section id="headerNav">
+      <header>
+        <img src="../media/pageIcon/logo.png" alt="Logo" />
+      </header>
+
+      <nav class="menu">
+        <a href="../index.html">Home</a>
+        <a href="about-us.html"> About Us </a>
+        <a href="recipes.html"> Recipes </a>
+        <a href="contact-us.html"> Contact </a>
+      </nav>
+    </section>
+
+    <main>
+      <!--Suggest recipe-->
+      <section class="suggestSection">
+        <article class="formRectangle">
+          <h1 class="title">Suggest a healthy recipe</h1>
+          <p class="sectionInfo">
+            Fill out the Form Below if you Would Like to Share a Healthy Recipe
+            with Everyone!
+          </p>
+
+          <form id="insertForm" method="post">
+            <article class="fieledRectangle">
+              <p>
+                <label for="name">Enter Your Name <span>*</span></label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="userInput"
+                  placeholder="Daniel Robinson"
+                  autofocus
+                  minlength="5"
+                  maxlength="50"
+                  pattern="[a-zA-z]+"
+                  size="25"
+                  required
+                />
+              </p>
+            </article>
+
+            <article class="fieledRectangle">
+              <p>
+                <label for="email">Enter Your Email <span>*</span></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="userInput"
+                  placeholder="daniel_robinson32@example.com"
+                  minlength="6"
+                  maxlength="40"
+                  pattern="[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+\.[a-zA-Z]{2-4}"
+                  size="25"
+                  required
+                />
+              </p>
+            </article>
+
+            <article class="fieledRectangle">
+              <p>
+                <label for="mealName">Meal Name <span>*</span></label>
+                <input
+                  type="text"
+                  name="mealName"
+                  id="mealName"
+                  class="userInput"
+                  placeholder="Robinson"
+                  minlength="2"
+                  maxlength="20"
+                  pattern="[a-zA-z]+"
+                  size="20"
+                  required
+                />
+              </p>
+            </article>
+
+            <article class="fieledRectangle">
+              <p>
+                
+              </p>
+            </article>
+
+            <article class="fieledRectangle">
+              <p>
+                <label for="Ingredient">Ingredients <span>*</span></label>
+                <textarea
+                  name="Ingredient"
+                  id="Ingredient"
+                  class="userInput"
+                  placeholder="Write Ingredient of the Recipe, (No More Than 500 Letter),  For Example:
+2 cups Lentil
+6 Mediums Tomato, diced
+6 Mediums Cucumber, chopped
+300 g Feta Cheese, crumbled
+3 tbsp Olive oil
+1 Medium fresh lemon juice
+1 bunch fresh basil leaves, chopped
+1 pinch Salt and pepper to taste"
+                  minlength="30"
+                  maxlength="500"
+                  rows="7"
+                  cols="36"
+                  required
+                ></textarea>
+              </p>
+            </article>
+
+            <article class="fieledRectangle">
+              <p>
+                <label for="Instruction">Instructions <span>*</span></label>
+                <textarea
+                  name="Instruction"
+                  id="Instruction"
+                  class="userInput"
+                  placeholder="Write Instruction of the Recipe, (No More Than 500 Letter),  For Example:
+Step1: Rinse lentils with water and then strain 
+Step2: Boil the lentils, reduce heat and simmer for 20 minutes
+Step3: Chop the tomatoes and cucumbers and crumble the cheese into cubes 
+Step4: Add the cooked lentils to a serving bowl and let cool
+Step5: Whisk together olive oil, lemon juice pepper and salt, and set aside
+Step6: Combine everything together gently stir and add the basil on the top
+Step7: Serve or cover and refrigerate until ready to serve"
+                  minlength="30"
+                  maxlength="500"
+                  rows="7"
+                  cols="36"
+                  required
+                ></textarea>
+              </p>
+            </article>
+
+            <article class="buttons">
+              <p>
+                <input type="submit" value="Send" />
+                <input type="reset" value="Clear" />
+              </p>
+            </article>
+          </form>
+        </article>
+      </section>
+
+      <!--Recipes Section-->
+      <section class="recipesSection">
+        <h1 class="title">Healthy Recipes</h1>
+        <p class="sectionInfo">
+          You Can See Here All The Healthy Recipes That People Shared!
+        </p>
+
+        <article class="allRecipeRectangle">
+          <article id="container"></article>
+
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footerText">
+        All copyright save to &copy; Arwa Omar &copy; Shehana Anees &copy; Razan
+        Abdulsalam
+      </p>
+    </footer>
+  </body>
+</html>

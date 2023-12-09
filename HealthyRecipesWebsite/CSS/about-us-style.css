@@ -1,0 +1,197 @@
+* {
+  font-family: "Alegreya Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* to make any child container do not go out the parent container*/
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-image: url(../Media/background/background-contact-section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  grid-gap: 20px;
+}
+
+#headerNav {
+  grid-row: 1/2;
+}
+
+/*header*/
+header {
+  background-color: #27180e;
+  background-image: url(https://cdn.cbeditz.com/cbeditz/preview/light-wood-light-bulb-background-free-wallpaper-image-nhvlf.png);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  text-align: center;
+  color: white;
+}
+
+header img {
+  width: 20%;
+}
+
+/*nav*/
+nav {
+  background-image: url(../media/background/headerBackground.png);
+  box-shadow: inset 8px 8px 50px rgba(0, 0, 0, 0.763);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: xx-large;
+  border-bottom: 1px solid black;
+  border-top: 4px solid black;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: "Alegreya Sans";
+  color: #eae2bf;
+  padding: 0px 20px;
+}
+
+.menu a:hover {
+  color: #fcbf49;
+  text-shadow: 0px 0px 30px #fdec6e; /* horizontal-shadow vertical-shadow blur-radius color */
+}
+
+/*main content*/
+.main {
+  grid-row: 2/3;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sectionInfo {
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  font-size: 27px;
+  text-shadow: 0px 0px 30px #ffffff;
+  margin-bottom: 10px;
+}
+
+.main .mainRectangle {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.main .mainRectangle h1 {
+  display: flex;
+  justify-content: center; /*made text in middile herizontly for flex*/
+  color: #ffcb32;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 20px black;
+}
+
+/*table*/
+.table {
+  display: flex;
+  justify-content: center;
+  background-image: url(../Media/background/background-contact-rectangle.jpg);
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 1.5);
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+table thead,
+table tbody {
+  color: #b7682b;
+}
+
+table tbody td:hover {
+  background-color: #27180e;
+  color: white;
+}
+
+table thead th.name {
+  text-align: center;
+  font-size: 27px;
+  padding: 10px;
+  font-family: "serif ";
+  color: #604113ea;
+}
+
+table tbody tr th {
+  text-align: left;
+  font-size: x-large;
+  width: 15%;
+  font-family: "serif ";
+  color: #604113ea;
+  padding-left: 5px;
+}
+
+table tbody td {
+  text-align: center;
+  font-size: 25px;
+  font-family: "serif ";
+}
+
+/*table icon*/
+table img {
+  width: 25%;
+}
+
+/*link in table*/
+table tbody tr#projects a {
+  color: #b7682bf4;
+}
+
+table tbody tr#projects a:hover {
+  color: white;
+}
+
+table tbody tr td a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+table tbody tr td a:hover {
+  color: white;
+}
+
+table td + td {
+  border-left: 1px solid black;
+}
+
+/*footer*/
+footer {
+  background-color: #27180e;
+  padding: 0.05em;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(109, 58, 0);
+  border-top: 2px solid rgb(109, 58, 0);
+  grid-row: 3/4;
+}
+
+.footer p {
+  text-shadow: 0px 0px 30px #ffffff;
+  color: white;
+  font-size: large;
+  padding-top: 10px;
+  font-weight: 600px;
+}
+
+@media (max-width: 600px) {
+  /*header*/
+  header img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 601px) {
+  header img {
+    width: 40%;
+  }
+}
