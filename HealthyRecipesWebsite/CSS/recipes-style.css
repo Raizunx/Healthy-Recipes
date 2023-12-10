@@ -9,7 +9,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../Media/background/background-section.jpg);
+  background-image: url(../Media/background/background-contact-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -26,7 +26,7 @@ body {
 /*header*/
 header {
   background-color: #27180e;
-  background-image: url(../Media/background/wood-background.png);
+  background-image: url(https://cdn.cbeditz.com/cbeditz/preview/light-wood-light-bulb-background-free-wallpaper-image-nhvlf.png);
   width: 100%;
   margin: 0 auto;
   padding: 10px 30px;
@@ -90,7 +90,7 @@ main {
 .suggestSection {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../Media/background/background-section.jpg);
+  background-image: url(../Media/background/background-contact-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -108,13 +108,14 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  background-image: url(../Media/background/background-rectangle.jpg);
+  background-image: url(../Media/background/background-contact-rectangle.jpg);
   padding: 32px;
   border-radius: 16px;
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 1.5);
 }
 
 input[type="text"],
+input[type="file"],
 input[type="email"],
 textarea {
   font-family: "Alegreya Sans", "Trebuchet MS";
@@ -189,7 +190,7 @@ textarea {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.allRecipeRectangle {
+.allRecipeRectangle{
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -205,6 +206,7 @@ textarea {
   position: relative;
 }
 
+
 .recipeRectangle:hover .recipeImage {
   opacity: 0.8; /*the defalut opacity is 1 */
 }
@@ -214,6 +216,7 @@ textarea {
   border-radius: 10px 10px 0 0;
 }
 
+
 .backSideRectangle .recipeSubTitle {
   font-family: "Alegreya Sans", "Franklin Gothic Medium", "Arial Narrow Bold",
     sans-serif;
@@ -222,7 +225,7 @@ textarea {
   font-weight: 600;
   text-align: center;
 }
-.recipeName {
+.recipeName{
   font-family: "Alegreya Sans", "Franklin Gothic Medium", "Arial Narrow Bold",
     sans-serif;
   text-shadow: 0px 0px 30px #eae470;
@@ -236,14 +239,21 @@ textarea {
   padding-bottom: 10px;
 }
 
+
+
 .frontSideRectangle .p {
   color: white;
   padding-top: 10px;
 }
 
+
+
 .backSideRectangle .recipeSubTitle {
   color: white;
 }
+
+
+
 
 .backSideRectangle .Ingredients,
 .backSideRectangle .Instructions {
@@ -255,6 +265,8 @@ textarea {
   text-align: left;
   padding: 5%;
 }
+
+
 
 /*Flip Rectangle*/
 

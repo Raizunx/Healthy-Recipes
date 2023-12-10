@@ -92,7 +92,7 @@ function getData() {
         InstructText.classList.add("Instructions");
 
         let image = document.createElement("img");
-        image.src = "../Media/photo/food.jpg";
+        image.src = "../Media/food.jpg";
         image.classList.add("recipeImage");
 
         let span1 = document.createElement("span");
